@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Centre</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Show carousel only on mobile devices */
+        @media (max-width: 768px) {
+            .carousel-container {
+                display: block;
+            }
+            .non-carousel-container {
+                display: none;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .carousel-container {
+                display: none;
+            }
+            .non-carousel-container {
+                display: block;
+            }
+        }
+
+        .service-card, .testimonial-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Courses Section -->
+<section class="services-section" id="services">
+    <h2 class="text-center" style="color:orange">Our Courses</h2>
+
+    <!-- Non-Carousel Content for Desktop -->
+    <div class="non-carousel-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/300" alt="CBSE/ICSE/State Board">
+                    <h4>CBSE/ICSE/State Board</h4>
+                    <p>Quality coaching for all major subjects. Our expertise makes learning fun and easy.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/300" alt="NEET Coaching">
+                    <h4>NEET Coaching</h4>
+                    <p>We help you prepare for NEET with dedicated mentors and mock tests for better performance.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/300" alt="Biology for NEET">
+                    <h4>Biology for NEET</h4>
+                    <p>In-depth Biology coaching to help you ace NEET with high marks and thorough understanding.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Content for Mobile -->
+    <div class="carousel-container">
+        <div id="coursesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/300" alt="CBSE/ICSE/State Board">
+                        <h4>CBSE/ICSE/State Board</h4>
+                        <p>Quality coaching for all major subjects. Our expertise makes learning fun and easy.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/300" alt="NEET Coaching">
+                        <h4>NEET Coaching</h4>
+                        <p>We help you prepare for NEET with dedicated mentors and mock tests for better performance.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/300" alt="Biology for NEET">
+                        <h4>Biology for NEET</h4>
+                        <p>In-depth Biology coaching to help you ace NEET with high marks and thorough understanding.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#coursesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#coursesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
